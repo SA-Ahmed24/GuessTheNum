@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GuessTheNumber-Goated3</title>
+    <script src="Webproject.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="Webproject.css"
+      title="style"
+    />
+  </head>
+  <body>
+    <div id="Background">
+    <header>
+      <h1 id="ToHide">GuessTheNum00 - © Goated3</h1>
+    </header>
+    <div id="TheBox">
+      <form>
+        <p><strong>Enter Your Name</strong></p>
+        <br />
+        <label>Name: </label>
+        <input id="UserName" type="text" />
+      </form>
+      <br />
+      <p><strong> Select Difficulty</strong></p>
+      <br />
+      <button class="DiffButtons" onclick="DiffEasy()">Easy</button>
+      <button class="DiffButtons" onclick="DiffMedium()">Medium</button>
+      <button class="DiffButtons" onclick="DiffHard()">Hard</button>
+      <p id="DifficultySelected">Difficulty Setting: Easy: 1-10 || Medium: 1 - 50 || Hard: 1 - 100</p>
+      <br /><br />
+      <p><strong>Select Theme</strong></p>
+      <br />
+      <button class="ThemeButton" onclick="Theme1()">Theme1 - Starry Night</button>
+      <button class="ThemeButton" onclick="Theme2()">Theme2 - Sky High</button>
+      <button class="ThemeButton" onclick="Theme3()">Theme3 - Snowy Mounain</button>
+      <p id="ThemeSelected"></p>
+      <br />
+      <p><strong>Ready To Begin?</strong></p>
+      <button class="StartGButton" onclick="StartGame()">Start Game</button>
+      <br /><br>
+    </div>
+    <br>
+    <div id="HiddenUnhidden">
+      <br><br>
+      <p id="DifficultyReminder"></p>
+      <p id="NumberofTries">Number of Tries: 0 </p>
+      <label >Enter A Number: </label>
+      <input type="number" id="UserGuessNumber">
+      <br><br>
+      <button onclick="Guess()" id="GuessButton">Guess</button>
+      <p id="Result"></p>
+      <button onclick="PlayAgain()" id="PlayAgainButton">Play Again</button>
+      <br><br>
+    </div>
+    </div>
+  </body>
+</html>

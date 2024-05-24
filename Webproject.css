@@ -1,0 +1,127 @@
+header {
+  text-align: center;
+  font-family: Monaco;
+}
+
+#TheBox {
+  text-align: center;
+  border: 5px solid;
+  width: 50%;
+  box-sizing: border-box;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightgray;
+
+  font-size: 20px;
+}
+
+.DiffButtons {
+  font-size: 20px;
+  font-family: Marker Felt;
+  border-radius: 16px;
+  text-align: center;
+  background-color: #1899d6;
+  border: 3px solid whitesmoke;
+  color: white;
+  font-family: din-round, sans-serif;
+  width: 20%;
+  height: 20%;
+}
+
+.DiffButtons:hover{
+  background-color: lightblue;
+  font-size: 25px;
+}
+
+
+.ThemeButton {
+  font-size: 20px;
+  font-family: Marker Felt;
+  border-radius: 16px;
+  text-align: center;
+  background-color: #36a9ae;
+  color: white;
+  border: 3px solid lightsalmon;
+  width: 30%;
+  height: 20%;
+}
+
+.ThemeButton:hover {
+  background-color: #90c1c4;
+  font-size: 25px;
+}
+
+
+.StartGButton {
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  background-color: #e1ecf4;
+  color: darkolivegreen;
+  border: 5px double lightseagreen;
+  width: 20%;
+  height: 20%;
+}
+
+.StartGButton:hover{
+  background-color: black;
+  color: yellow;
+  font-size: 25px;
+  animation: colorchange 1s infinite;
+}
+
+@keyframes colorchange{
+  50% {border-color: red;}
+
+}
+
+body {
+  background-color: lightblue;
+}
+
+#HiddenUnhidden {
+  text-align: center;
+  border: 5px solid;
+  width: 50%;
+  box-sizing: border-box;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightgray;
+  border-color: black;
+
+  font-size: 20px;
+  color: red;
+  display: none;
+
+  animation: CoolBorder 2s infinite;
+
+}
+
+@keyframes CoolBorder {
+  50% {border-color: red;}
+
+}
+
+#PlayAgainButton{
+  display: none;
+  text-align: center;
+  margin-left: 45%;
+  background-color: crimson;
+  color: chartreuse;
+  font-size: 15px;
+}
+
+#PlayAgainButton:hover{
+  background-color: black;
+  font-size: 20px;
+}
+
+#GuessButton{
+  text-align: center;
+  background-color: teal;
+  border: 3px solid black;
+  color: white;
+  font-size: 15px;
+}
